@@ -1,4 +1,4 @@
-# Script for opening and closing a Windows app
+# Script for opening and closing a Windows app🤖
 
 The app-open-close Python script opens a Windows app by using the app's URI, then closes the app after a specific amount of time.
 
