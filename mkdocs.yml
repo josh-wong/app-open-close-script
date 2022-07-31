@@ -1,0 +1,87 @@
+site_name: <SITE NAME>
+site_url: https://josh-wong.github.io/<SLUG URL>/
+
+# Add repository details in the top right-hand corner
+repo_name: josh-wong/<SLUG URL>
+repo_url: https://github.com/josh-wong/<SLUG URL>
+# > **Warning**
+# >
+# > This edit page button does not work. I have prioritized the 
+# multidocs site, so the edit page button on https://josh-wong.github.io 
+# is correct; there doesn't seem to be a way to remove it from one site 
+# and keep it on the other.
+edit_uri: blob/main/
+
+plugins:
+  - search
+  - techdocs-core
+  # Show the last updated date
+  #- git-revision-date
+  # Enable videos to be embedded
+  #- mkdocs-video:
+  #    css_style:
+  #      width: "100%"
+  #      height: "300px"
+
+markdown_extensions:
+  # Add styles for buttons
+  - attr_list
+  # Add emoji support
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+theme:
+  name: material
+  # Add logos to docs page
+  favicon: assets/images/favicon.png
+  # logo: assets/images/<LOGO ITEM>.png
+  # Add icon to show repository information and link
+  icon:
+    repo: fontawesome/brands/github
+  # Add light & dark theme
+  palette:
+    - media: "(prefers-color-scheme: light)" 
+      scheme: default
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+      primary: blue
+      accent: blue
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: slate
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+      primary: blue
+      accent: blue
+  features:
+    # Add custom search functions
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.tracking
+    - navigation.top
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/josh-wong
+      name: josh-wong on GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/wongjoshua
+      name: Joshua Wong on LinkedIn
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/josh_in_japan
+      name: josh_in_japan on Twitter
+
+nav:
+  - Overview: 'index.md'
+  - Getting started: '01_getting-started.md'
+#  - [ADD TITLE]: '02_[GERUND]_[TOPIC].md' # Add any additional pages as necessary, but be sure to change the page numbering.
+  - Conclusion: '03_conclusion.md'
+  - References: '04_references.md'
+  - Contributions: '05_contributions.md'
+  - '': ''
+  - '': ''
+  - 🏠Home: 'https://josh-wong.github.io'

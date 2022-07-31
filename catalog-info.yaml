@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "app-open-close-script"
+  tags:
+    - markdown
+spec:
+  type: docs
+  lifecycle: production
+  owner: josh-wong
