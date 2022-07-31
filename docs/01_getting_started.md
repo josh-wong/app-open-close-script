@@ -1,9 +1,8 @@
 # Getting started
 
-[PROVIDE SOME DETAILS ABOUT WHAT SHOULD BE KNOWN BEFORE STARTING WITH THIS DOCUMENTATION.]
+Before you set up the open and close a Windows app script, make sure you have the prerequisites.
 
 ## Prerequisites
 
-- [ADD A REQUIREMENT]
-- [ADD A REQUIREMENT]
-- [ADD A REQUIREMENT]
+- Windows 10 or later
+- Python 3.10 or later
