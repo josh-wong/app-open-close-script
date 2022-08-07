@@ -1,9 +1,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: "app-open-close-script"
+  name: app-open-close-script
+  title: app-open-close-script
+  description: This Python script opens a Windows app, then closes the app after a specific amount of time.
   tags:
     - markdown
+    annotations:
+    github.com/project-slug: josh-wong/app-open-close-script
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: docs
   lifecycle: production
