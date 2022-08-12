@@ -35,7 +35,7 @@ theme:
   name: material
   # Add logos to docs page
   favicon: assets/images/favicon.png
-  # logo: assets/images/<LOGO ITEM>.png
+  logo: assets/images/mkdocs_robot.png
   # Add icon to show repository information and link
   icon:
     repo: fontawesome/brands/github
