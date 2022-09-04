@@ -14,7 +14,7 @@ edit_uri: blob/main/
 
 plugins:
   - search
-  - techdocs-core
+  #- techdocs-core
   # Show the last updated date
   - git-revision-date
   # Enable videos to be embedded
