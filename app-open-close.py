@@ -2,10 +2,10 @@ import os
 import time
 
 for i in range(1):
-    # Open Command Prompt, then open the app by using its URI.
+    # Open Command Prompt, then open the app by using the app URI.
     os.system("start /wait cmd /c start "" <INSERT APP URI>")
     # Wait XX seconds before closing the app.
-    time.sleep(XX)
+    time.sleep(<XX>)
     # Close the app.
     os.system("TASKKILL /F /IM <INSERT APP NAME>.exe")
     # Indicate that the process was a success.
