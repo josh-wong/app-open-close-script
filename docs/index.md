@@ -1,5 +1,5 @@
 # Script for opening and closing a Windows app🤖
 
-The app-open-close Python script opens a Windows app by using the app's URI, then closes the app after a specific amount of time.
+By using the **app-open-close** Python script and adding it as a task in Task Scheduler in Windows, you can automate the process of opening a specific app, allowing data to sync, and then close the app.
 
-By using this script, you can sync data automatically (in conjunction with Task Scheduler) or avoid constantly using CPU resources when the app doesn't need to be used.
+This script can be particularly helpful for when you want to sync app data at regular intervals. By only opening the app when you need to sync data and then closing it after the data has finished syncing, you can reduce computing resource.

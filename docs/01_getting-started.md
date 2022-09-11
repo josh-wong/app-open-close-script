@@ -1,6 +1,6 @@
 # Getting started
 
-Before you set up the open and close a Windows app script, make sure you have the prerequisites.
+Before you set up the **app-open-close** script, make sure you have the prerequisites.
 
 ## Prerequisites
 
