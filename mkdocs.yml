@@ -1,5 +1,6 @@
 site_name: Script for opening and closing a Windows app
 site_url: https://josh-wong.github.io/app-open-close-script/
+site_description: Automate the process of opening a specific app, allowing data to sync, and then close the app.
 
 # Add repository details in the top right-hand corner
 repo_name: josh-wong/app-open-close-script
@@ -26,6 +27,25 @@ plugins:
   - git-committers:
       repository: josh-wong/app-open-close-script
       branch: main
+  - rss:
+      abstract_chars_count: 160  # -1 for full content
+      categories:
+        - tags
+      comments_path: "#__comments"
+      date_from_meta:
+        as_creation: "date"
+        as_update: false
+        datetime_format: "%Y-%m-%d"
+      enabled: true
+      feed_ttl: 1440
+      image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png
+      length: 20
+      pretty_print: false
+      match_path: ".*"
+      url_parameters:
+        utm_source: "documentation"
+        utm_medium: "RSS"
+        utm_campaign: "feed-syndication"
 
 markdown_extensions:
   # Add styles for buttons
@@ -107,6 +127,8 @@ nav:
   - Conclusion: '03_conclusion.md'
   - References: '04_references.md'
   - Contributions: '05_contributions.md'
+  - '': ''
+  - 🔶RSS: 'https://josh-wong.github.io/app-open-close-script/feed_rss_updated.xml'
   - '': ''
   - '': ''
   - 🏠Home: 'https://josh-wong.github.io'
