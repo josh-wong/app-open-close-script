@@ -19,14 +19,16 @@ plugins:
   # Show the last updated date
   - git-revision-date-localized:
       type: date
+  # Show docs contributors
+  - git-committers:
+      repository: josh-wong/app-open-close-script
+      branch: main
   # Enable videos to be embedded
   - mkdocs-video:
       css_style:
         width: "100%"
         height: "300px"
-  - git-committers:
-      repository: josh-wong/app-open-close-script
-      branch: main
+  # Add support for RSS
   - rss:
       abstract_chars_count: 160  # -1 for full content
       categories:
