@@ -79,6 +79,8 @@ markdown_extensions:
 
 theme:
   name: material
+  # Extend the theme
+  custom_dir: overrides
   # Add logos to docs page
   favicon: assets/images/favicon.png
   logo: assets/images/mkdocs_robot.png
@@ -123,6 +125,8 @@ theme:
       primary: grey
       accent: blue
   features:
+    # Mark announcement as read
+    - announce.dismiss
     # Add support for improved tooltips
     - content.tooltips
     # Add custom search functions
