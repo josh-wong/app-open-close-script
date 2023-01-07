@@ -1,15 +1,16 @@
 INHERIT: mkdocs.yml
 plugins:
   - search
-  # Show docs contributors
   - git-committers:
       repository: josh-wong/app-open-close-script
       branch: main
-  # Show the last updated date
   - git-revision-date-localized:
       type: date
   - meta
-  # Add RSS function
+  - privacy:
+		external_links: true
+		external_links_attr_map:
+			target: _blank
   - rss:
       abstract_chars_count: 160  # -1 for full content
       categories:
@@ -32,5 +33,6 @@ plugins:
   # Enable support for social cards (pretty link previews)
   - social
   - tags
+  - typeset
 
    
