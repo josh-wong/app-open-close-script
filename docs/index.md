@@ -1,4 +1,4 @@
-# app-open-close script for syncing data🤖
+# app-open-close script for syncing data in a Windows app🤖
 
 By using the **app-open-close** Python script and adding it as a task in Task Scheduler in Windows, you can automate the process of opening a specific app, allowing data to sync, and then close the app.
 
