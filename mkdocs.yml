@@ -1,4 +1,4 @@
-site_name: Script for opening and closing a Windows app
+site_name: app-open-close script
 site_url: https://josh-wong.github.io/app-open-close-script/
 site_description: Automate the process of opening a specific app, allowing data to sync, and then close the app.
 
