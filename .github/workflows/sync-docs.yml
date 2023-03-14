@@ -22,7 +22,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.SYNC_DOCS_GITHUB }}
         with:
-          source_file: "docs/**" # Folder to sync from
+          source_file: "docs/" # Folder to sync from
           destination_repo: "josh-wong/sandbox-jekyll-docs-site-1" # Target repo
           destination_folder: "app-open-close-script" # Folder to sync to
           user_name: "josh-wong"
