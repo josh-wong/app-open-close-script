@@ -13,6 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
 
       # Sync the contents of the "docs" folder to the docs repo
       - name: Push app-open-close-script docs to folder
