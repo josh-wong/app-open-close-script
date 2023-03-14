@@ -1,29 +1,30 @@
 # Workflow needed to sync docs from origin repositories to the monorepo
 
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
 
 name: 🔄 Sync docs from origin repositories
 
 jobs:
-    copy-file:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v3
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
 
-            # Sync the contents of the "docs" folder to the docs repo
-            - name: Push app-open-close-script docs to folder
-              uses: dmnemec/copy_file_to_another_repo_action@main
-              env:
-                  API_TOKEN_GITHUB: ${{ secrets.SYNC_DOCS_GITHUB }}
-              with:
-                  source_file: "docs" # Folder to sync from
-                  destination_repo: "josh-wong/sandbox-jekyll-docs-site-1" # Target repo
-                  destination_folder: "app-open-close-script" # Folder to sync to
-                  user_email: "joshuarwong@gmail.com"
-                  user_name: "josh-wong"
-                  commit_message: "AUTO: Sync docs to docs repo"
-                  git_server: "github.com"
+      # Sync the contents of the "docs" folder to the docs repo
+      - name: Push app-open-close-script docs to folder
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.SYNC_DOCS_GITHUB }}
+        with:
+          source_file: "docs" # Folder to sync from
+          destination_repo: "josh-wong/sandbox-jekyll-docs-site-1" # Target repo
+          destination_folder: "app-open-close-script" # Folder to sync to
+          user_name: "josh-wong"
+          commit_message: "AUTO: Sync docs to docs repo"
