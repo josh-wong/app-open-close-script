@@ -1,4 +1,4 @@
-# Workflow needed to sync docs from origin repositories to the monorepo
+# Workflow needed to sync docs from origin repositories to monorepo
 name: 🔄 Sync docs from origin repositories
 
 on:
