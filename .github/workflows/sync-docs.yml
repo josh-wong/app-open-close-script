@@ -1,4 +1,4 @@
-# Workflow needed to sync docs from origin repositories to monorepo
+# Workflow needed to sync docs from the origin repository to product docs repo
 name: 🔄 Sync docs from origin repositories
 
 on:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # Sync the contents of the "docs" folder to the docs repo
+      # Sync the contents of the "docs" folder to the product docs repo
       - name: Push app-open-close-script docs to folder
         uses: dmnemec/copy_file_to_another_repo_action@main
         env:
