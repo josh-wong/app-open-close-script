@@ -22,7 +22,7 @@ jobs:
           source_file: "docs/" # Folder to sync from
           destination_repo: "josh-wong/sandbox-jekyll-docs-site-1" # Target repo
           destination_folder: "app-open-close-script" # Folder to sync to
-          destination_branch_create: "docs-update"
+          destination_branch_create: "app-open-close-script/docs-update"
           user_name: "josh-wong"
           commit_message: "AUTO: Sync docs to docs repo"
           use_rsync: rsync -avh
