@@ -12,7 +12,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
 
             # Sync the contents of the "docs" folder to the docs repo
             - name: Push app-open-close-script docs to folder
