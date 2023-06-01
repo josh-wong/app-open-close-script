@@ -1,28 +1,30 @@
+# This workflow is no longer in use but may be useful in the future.
+
 # Workflow needed to sync docs from the origin repository to product docs repo
-name: 🔄 Sync docs from origin repositories
+# name: 🔄 Sync docs from origin repositories
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  copy-file:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+# jobs:
+#   copy-file:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
 
-      # Sync the contents of the "docs" folder to the product docs repo
-      - name: Push app-open-close-script docs to folder
-        uses: dmnemec/copy_file_to_another_repo_action@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.SYNC_DOCS_GITHUB }}
-        with:
-          source_file: "docs/" # Folder to sync from
-          destination_repo: "josh-wong/sandbox-jekyll-docs-site-1" # Target repo
-          destination_folder: "latest/app-open-close-script" # Folder to sync to
-          destination_branch_create: "app-open-close-script/docs-update"
-          user_name: "josh-wong"
-          commit_message: "AUTO: Sync docs to docs repo"
-          use_rsync: rsync -avh
+#       # Sync the contents of the "docs" folder to the product docs repo
+#       - name: Push app-open-close-script docs to folder
+#         uses: dmnemec/copy_file_to_another_repo_action@main
+#         env:
+#           API_TOKEN_GITHUB: ${{ secrets.SYNC_DOCS_GITHUB }}
+#         with:
+#           source_file: "docs/" # Folder to sync from
+#           destination_repo: "josh-wong/sandbox-jekyll-docs-site-1" # Target repo
+#           destination_folder: "latest/app-open-close-script" # Folder to sync to
+#           destination_branch_create: "app-open-close-script/docs-update"
+#           user_name: "josh-wong"
+#           commit_message: "AUTO: Sync docs to docs repo"
+#           use_rsync: rsync -avh
