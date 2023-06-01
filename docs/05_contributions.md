@@ -1,6 +1,6 @@
 # Contributions
 
-Did you encounter an error when using this app or script? Does this documentation need to be clarified, updated, or otherwise improved upon? 
+Did you encounter an error when using this app or script? Does this documentation need to be clarified, updated, or otherwise improved upon?
 
 If so, pull requests are welcome! Please do the following:
 
