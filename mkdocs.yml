@@ -14,8 +14,7 @@ repo_url: https://github.com/josh-wong/app-open-close-script
 edit_uri: blob/main/
 
 plugins:
-  # Enable the search function (currently disabled to take advantage of new search features in Material for MkDocs Insiders)
-  #- search
+  - search
   - minify:
       minify_html: true
   # Enable videos to be embedded
